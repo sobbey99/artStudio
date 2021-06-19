@@ -16,11 +16,9 @@ h1,h2,h3,h4,h5,h6,p,ol,ul {
 
 @import 'base/mixins';
 @import 'base/vars';
+@import 'base/keyframes';
 
-h2 {
-    font-weight: 700;
-}
-
-p {
-    font-weight: 500;
-}
+//BLOCKS
+@import 'blocks/buttons';
+@import 'blocks/promo';
+@import 'blocks/actors';

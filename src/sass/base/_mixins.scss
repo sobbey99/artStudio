@@ -1,0 +1,17 @@
+@mixin crosshairBefore {
+    &::before {
+        content: '';
+        display: block;
+        background: url('../icons/crosshairs/crosshair_white.svg') center center/ cover no-repeat;
+        position: absolute;
+    }
+}
+
+@mixin crosshairAfter {
+    &::after {
+        content: '';
+        display: block;
+        background: url('../icons/crosshairs/crosshair_white.svg') center center/ cover no-repeat;
+        position: absolute;
+    }
+}

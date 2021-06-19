@@ -1,0 +1,109 @@
+.actors {
+    // background: url('../img/backgrounds/actors-bg.jpg') center center/cover no-repeat;
+    position: relative;
+    &_bg {
+        position: absolute;
+        top: -250px;
+        height: 2205px;
+        width: 100%;
+        z-index: -5;
+        object-fit: cover;
+    }
+    // &-grid {
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 1fr);
+    //     grid-template-rows: minmax(600px, auto);
+    //     gap: 40px;
+    // }
+    &-item {
+        &__img {
+            margin-bottom: 15px;
+            width: 340px;
+            height: 340px;
+            object-fit: contain;
+        }
+        &__title {
+            color: #fbbe25;
+            text-transform: uppercase;
+            font-size: 23px;
+        }
+        &__text {
+            color: #fff;
+            max-width: 340px;
+            font-size: 20px;
+        }
+    }
+    &__header {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        transform: translateY(-25px);
+    }
+    &__title {
+        font-size: 32px;
+        transform: translateX(-140px);
+    }
+    &__subtitle {
+        font-size: 36px;
+        transform: translateX(120px);
+        font-weight: 900;
+        width: 600px;
+        margin: 0 auto;
+        span {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+    &-flex {
+        &:nth-child(1) {
+            margin-bottom: 60px;
+        }
+        display: flex;
+        justify-content: space-between;
+    }
+    &-gift {
+        display: flex;
+        justify-content: center;
+        transform: translateY(65px) translateX(-80px);
+        &left {
+            color: #fff;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            &__title {
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 38px;
+                line-height: 1.2em;
+                span {
+
+                    color: #070707;
+
+                }
+            }
+            &__text {
+                font-weight: 700;
+                width: 500px;
+                font-size: 28px;
+                line-height: 1.2em;
+                margin-bottom: 20px;
+                span {
+                    color: #ec563b;
+                }
+            }
+            margin-right: 20px;
+        }
+        &right {
+            &__numb {
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 52px;
+                line-height: 1.2em;
+                color: #070707;
+            }
+            &__img {
+                width: 270px;
+            }
+        }
+    }
+}
