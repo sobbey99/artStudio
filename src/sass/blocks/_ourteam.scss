@@ -1,0 +1,165 @@
+.ourteam {
+    position: relative;
+    &__header {
+        padding-top: 140px;
+        margin-bottom: 30px;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 38px;
+        text-align: center;
+        font-weight: 700;
+        color: #fff;
+        width: 300px;
+        margin: 0 auto;
+        transform: translateX(100px);
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        font-size: 38px;
+        text-align: center;
+        font-weight: 700;
+        color: #fff;
+        width: 500px;
+        margin: 0 auto;
+        transform: translateX(-100px);
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__flex-1{
+        margin-bottom: 70px;
+    }
+    &__flex-2 {
+        position: relative;
+    }
+    &__bg {
+        position: absolute;
+        top: -160px;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        height: 2000px;
+    }
+    &-item {
+        min-height: 450px;
+        &__title {
+            color: #fff;
+            font-weight: 500;
+            font-size: 24px;
+        }
+        &__list {
+            list-style-type: none;;
+        }
+        &__listitem {
+            color: #fff;
+            font-size: 18px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #fff;
+                top: 9px;
+                left: -15px;
+            }
+        }
+        &__img {
+            width: 260px;
+            height: 260px;
+            margin-bottom: 15px;
+            transition: 900ms all ease;
+            &:hover {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+    &-item-1 {
+        position: relative;
+        @include crosshairBefore;
+        &::before {
+            width: 45px;
+            height: 45px;
+            top: -120px;
+            left: -85px;
+        }
+    }
+    &-item-3 {
+        position: relative;
+        @include crosshairAfter;
+        &::after {
+            width: 35px;
+            height: 35px;
+            top: 80px;
+            right: 10px;
+        }
+    }
+    &-item-4 {
+        position: relative;
+        @include crosshairBefore;
+        &::before {
+            width: 70px;
+            height: 70px;
+            top: -50px;
+            left: -100px;
+        }
+    }
+    &-item-6 {
+        position: relative;
+        @include crosshairBefore;
+        &::before {
+            width: 55px;
+            height: 55px;
+            bottom: -40px;
+            right: 0;
+        }
+        @include crosshairAfter;
+        &::after {
+            width: 80px;
+            height: 80px;
+            bottom: -120px;
+            right: -70px;
+        }
+    }
+    &__decor{
+        position: absolute;
+        width: 700px;
+        bottom: -410px;
+        left: -200px;
+        z-index: -2;
+    }
+    &-questions {
+        // background: url('../img/backgrounds/questions-bg.jpg.png') center center /cover no-repeat;
+        // min-height: 680px;
+        // background-size: 95%;
+        // transform: translateY(-130px);
+        position: relative;
+        // z-index: -3;
+        padding: 100px 0;
+        &__bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -10;
+        }
+        &__title {
+            text-transform: uppercase;
+            // text-align: center;
+            // font-weight: 700;
+            // color: #fff;
+            // padding-top: 270px;
+            // font-size: 28px;
+        }
+    }
+
+    .advantages-descr__ourteam {
+        margin-top: 150px;
+    }
+}
+

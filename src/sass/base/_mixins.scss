@@ -15,3 +15,15 @@
         position: absolute;
     }
 }
+
+@mixin AfterCircle {
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        border: 15px solid #ffcf52;
+    }
+}

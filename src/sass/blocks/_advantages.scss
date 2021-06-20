@@ -1,0 +1,164 @@
+.advantages {
+    position: relative;
+    padding-bottom: 100px;
+    &__bg {
+       position: absolute;
+       object-fit: cover;
+       width: 100%;
+       top: -140px;
+       z-index: -10;
+       height: 1690px;
+    }
+    &-descr {
+        &__title {
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 20px;
+            position: relative;
+
+        }
+        &__text {
+            display: block;
+            width: 640px;
+            margin: 0 auto;
+            font-size: 22px;
+            font-weight: 500;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 67px;
+                height: 57px;
+                background: url('../icons/kavuchki.svg') center center/cover no-repeat;
+                left: -85px;
+                top: -25px;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 67px;
+                height: 57px;
+                background: url('../icons/kavuchki.svg') center center/cover no-repeat;
+                right: -85px;
+                bottom: -25px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &-adv {
+        &__title {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 60px;
+            margin-bottom: 50px;
+            position: relative;
+            @include crosshairAfter;
+            &::after {
+                width: 70px;
+                height: 70px;
+                right: 0;
+                top: 0;
+            }
+        }
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+            &:nth-child(1) {
+                margin-bottom: 100px;
+            }
+        }
+    }
+    &-item {
+        position: relative;
+        &__title {
+            text-transform: uppercase;
+            font-size: 23px;
+            color: #070707;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+        &__bg {
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            top: 70px;
+            
+        }
+        &__text {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 25px;
+            font-size: 18px;
+            position: relative;
+            z-index: 300;
+        }
+        .p0{
+            padding: 0;
+        }
+        &__decor {
+            width: 400px;
+            position: absolute;
+            z-index: -9;
+            top: 105px;
+            left: 4px;
+        }
+    }
+    &-item-1 {
+        position: relative;
+        @include crosshairBefore;
+        &::before {
+            width: 50px;
+            height: 50px;
+            left: -80px;
+            top: 90px;
+
+        }
+    }
+    &-descr_2 {
+        margin-top: 120px;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: url('../icons/crosshairs/crosshair_blue.svg') center center/ cover no-repeat;
+            bottom: -40px;
+            left: 40px; 
+        }
+    }
+    &-item-3 {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ec553b;
+            right: -65px;
+            top: 100px;
+        }
+    }
+    &-item-4 {
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 150px;
+            height: 20px;
+            background: url(../icons/zig-icon.svg) center center/ cover no-repeat;
+            bottom: -50px;
+            left: -70px;
+        }
+    }
+}
