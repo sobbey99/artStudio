@@ -95,7 +95,7 @@
             position: absolute;
             height: 135px;
             width: 20px;
-            background: url('../icons/zig_yellow.svg') center center/ cover no-repeat;
+            background: url('../icons/zig_yellow.png') center center/ cover no-repeat;
             right: -80px;
             top: 100px;
         }
@@ -136,13 +136,14 @@
             position: absolute;
             width: 150px;
             height: 20px;
-            background: url(../icons/zig-icon.svg) center center/cover no-repeat;
+            background: url(../icons/zig.png) center center/cover no-repeat;
+            background-size: 100%;
             top: 15px;
             left: -30px;
         }
         @include crosshairAfter;
         &::after {
-        background: url('../icons/crosshairs/crosshair_yellow.svg') center center/ cover no-repeat;
+        background: url('../icons/crosshairs/crosshair_yellow.png') center center/ cover no-repeat;
         width: 80px;
         height: 80px;
         bottom: -30px;
@@ -152,7 +153,7 @@
             position: relative;
             @include crosshairAfter;
             &::after {
-                background: url('../icons/crosshairs/crosshair_blue.svg') center center/ cover no-repeat;
+                background: url('../icons/crosshairs/crosshair_blue.png') center center/ cover no-repeat;
                 width: 60px;
                 height: 60px;
                 top: 0;

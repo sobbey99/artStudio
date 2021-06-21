@@ -141,6 +141,9 @@
         position: relative;
         // z-index: -3;
         padding: 100px 0;
+        min-height: 650px;
+        transform: translateY(-200px);
+        // z-index: -15;
         &__bg {
             position: absolute;
             width: 100%;
@@ -150,16 +153,47 @@
         }
         &__title {
             text-transform: uppercase;
-            // text-align: center;
-            // font-weight: 700;
-            // color: #fff;
-            // padding-top: 270px;
-            // font-size: 28px;
+            text-align: center;
+            font-weight: 700;
+            color: #fff;
+            font-size: 28px;
         }
+    }
+    &-acordeon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 240px;
+        flex-direction: column;
+
     }
 
     .advantages-descr__ourteam {
         margin-top: 150px;
+    }
+    .accordion-button {
+        background: white;
+        color: #000;
+        font-weight: 700;
+        border: none;
+        box-shadow: none;
+        height: 50px;
+        margin: 10px 0;
+        border-radius: 15px !important;
+    }
+    .accordion-body {
+        border-radius: 15px !important;
+        color: black;
+        background: white;
+        border: 1px solid black;
+            }
+    .accordion-button::after {
+        background: url('../icons/acordeon_btn.png') center  center / cover no-repeat;
+        width: 34px;
+        height: 34px;
+    }
+    #accordionFlushExample {
+        width: 580px;
     }
 }
 

@@ -1,6 +1,7 @@
-@import 'libs/grid';
-@import 'libs/reboot';
+@import 'base/loader';
+@import 'libs/bootstrap';
 @import 'libs/slick';
+@import 'libs/animate';
 @import 'base/fonts';
 
 h1,h2,h3,h4,h5,h6,p,ol,ul {
@@ -26,3 +27,5 @@ h1,h2,h3,h4,h5,h6,p,ol,ul {
 @import 'blocks/advantages';
 @import 'blocks/forwhom';
 @import 'blocks/ourteam';
+@import 'blocks/contact';
+@import 'blocks/footer';

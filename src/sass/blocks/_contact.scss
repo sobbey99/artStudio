@@ -1,0 +1,108 @@
+.contact {
+    transform: translateY(-60px);
+    &__title {
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        transform: translateX(-200px);
+        width: 600px;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        width: 450px;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-align: center;
+        transform: translateX(100px);
+        margin: 0 auto;
+    }
+    &__header {
+        position: relative;
+        margin-bottom: 50px;
+        @include crosshairBefore;
+        &::before {
+            background: url('../icons/crosshairs/crosshair_green.png') center center/ cover no-repeat;
+            width: 60px;
+            height: 60px;
+            top: 100px;
+        }
+    }
+    &-form {
+        width: 450px;
+        background-color: #ffbe24;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 35px;
+        border-radius: 60px;
+        position: relative;
+        &__title {
+            color: #fff;
+            text-align: center;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.1em;
+            margin-bottom: 10px;
+        }
+        &__input {
+            color: #6d6e70;
+            padding: 10px;
+            outline: 0;
+            outline-offset: 0;
+            border: none;
+            border-radius: 9px;
+            margin: 10px 0;
+            width: 100%;
+        }
+        &__decor {
+            position: absolute;
+        }
+        &__decor-1 {
+            left: -500px;
+            top: 200px;
+            width: 350px;
+        }
+        &__decor-2 {
+            right: -450px;
+            top: -80px;
+            width: 320px;
+        }
+        @include crosshairAfter;
+        &::after {
+            background: url('../icons/crosshairs/crosshair_yellow.png') center center/ cover no-repeat;
+            width: 60px;
+            height: 60px;
+            bottom: 70px;
+            right: -120px;
+        }
+        label.error {
+            font-size: 18px;
+            color: red;
+            text-align: center;
+        }
+    }
+    &__policy {
+        width: 450px;
+        margin: 0 auto;
+        margin-top: 15px;
+        display: block;
+        padding: 0 35px;
+        color: #7f7f7f;
+        font-weight: 500;
+        text-align: center;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url('../icons/zig_blue.png') center center/ cover no-repeat;
+            background-size: 100%;
+            width: 300px;
+            height: 50px;
+            right: -470px;
+        }
+    }
+}

@@ -21,3 +21,12 @@
     background-color: #3daada;
    }
 }
+
+@keyframes OpacityIn {
+   from{
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}

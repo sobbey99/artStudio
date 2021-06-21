@@ -2,7 +2,7 @@
     &::before {
         content: '';
         display: block;
-        background: url('../icons/crosshairs/crosshair_white.svg') center center/ cover no-repeat;
+        background: url('../icons/crosshairs/crosshair_white.png') center center/ cover no-repeat;
         position: absolute;
     }
 }
@@ -11,7 +11,7 @@
     &::after {
         content: '';
         display: block;
-        background: url('../icons/crosshairs/crosshair_white.svg') center center/ cover no-repeat;
+        background: url('../icons/crosshairs/crosshair_white.png') center center/ cover no-repeat;
         position: absolute;
     }
 }

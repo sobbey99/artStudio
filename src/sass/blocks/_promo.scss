@@ -199,6 +199,10 @@
         position: absolute;
         z-index: 3;
         text-align: end;
+        opacity: 0;
+        animation: OpacityIn 1200ms linear;
+        animation-delay: 1800ms;
+        animation-fill-mode: forwards;
     }
 }
 

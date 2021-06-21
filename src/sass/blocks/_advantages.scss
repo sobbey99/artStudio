@@ -17,7 +17,7 @@
             font-size: 32px;
             margin-bottom: 20px;
             position: relative;
-
+            
         }
         &__text {
             display: block;
@@ -32,7 +32,7 @@
                 position: absolute;
                 width: 67px;
                 height: 57px;
-                background: url('../icons/kavuchki.svg') center center/cover no-repeat;
+                background: url('../icons/kavuchki.png') center center/cover no-repeat;
                 left: -85px;
                 top: -25px;
             }
@@ -42,7 +42,7 @@
                 position: absolute;
                 width: 67px;
                 height: 57px;
-                background: url('../icons/kavuchki.svg') center center/cover no-repeat;
+                background: url('../icons/kavuchki.png') center center/cover no-repeat;
                 right: -85px;
                 bottom: -25px;
                 transform: rotate(180deg);
@@ -129,7 +129,7 @@
             position: absolute;
             width: 80px;
             height: 80px;
-            background: url('../icons/crosshairs/crosshair_blue.svg') center center/ cover no-repeat;
+            background: url('../icons/crosshairs/crosshair_blue.png') center center/ cover no-repeat;
             bottom: -40px;
             left: 40px; 
         }
@@ -156,7 +156,8 @@
             position: absolute;
             width: 150px;
             height: 20px;
-            background: url(../icons/zig-icon.svg) center center/ cover no-repeat;
+            background: url(../icons/zig.png) center center/ cover no-repeat;
+            background-size: 100%;
             bottom: -50px;
             left: -70px;
         }
