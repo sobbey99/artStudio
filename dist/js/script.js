@@ -1,10 +1,12 @@
 let loader = document.querySelector('.loader');
+let bodi  = document.querySelector('.body');
 
 window.addEventListener('load', () => {
     loader.classList.add('hideloader');
     setTimeout( () => { 
         loader.remove();
     }, 600 );
+    bodi.classList.remove('bodyoverflow');
 });
 
     
